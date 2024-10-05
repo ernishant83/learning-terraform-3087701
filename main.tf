@@ -27,7 +27,7 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_security_group" "web-sec-grp"{
+resource "aws_security_group" "web_sec_grp"{
   name        = "web_sec_grp"
   description = "Allow http and https in and allow everthing out."
   vpc_id      = data.aws_vpc.default.id
